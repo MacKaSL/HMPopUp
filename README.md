@@ -25,5 +25,12 @@ HMPopUpView *hmPopUp = [[HMPopUpView alloc] initWithTitle:@"Hey PopUp..." okButt
 [hmPopUp showInView:self.view];
 ```
 
+<br>
+######Note:
+By default the view is in black and white unless you configure view using method
+```
+configureHMPopUpViewWithBGColor: titleColor: buttonViewColor: buttonBGColor: buttonTextColor:
+ ```
+
 Enjoy :smiley:
 ===

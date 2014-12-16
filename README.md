@@ -11,7 +11,7 @@ It's very easy to add this custom view to your project.
 
 1) Open the HMPopUp project folder.
 
-2) Drag and drop "HMPopUp" folder to your project or you can do this through Xcode by adding files to your project. Either way files will copy to your project.
+2) Drag and drop "HMPopUpView.h" and "HMPopUpView.m" files to your project or you can do this through Xcode by adding files to your project. Either way files will copy to your project.
 
 
 ###Implementaion:

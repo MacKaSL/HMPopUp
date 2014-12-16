@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0122CCDE1A40B2EF000913BC /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCD61A40B2EF000913BC /* Icon-29@2x.png */; };
+		0122CCDF1A40B2EF000913BC /* Icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCD71A40B2EF000913BC /* Icon-29@3x.png */; };
+		0122CCE01A40B2EF000913BC /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCD81A40B2EF000913BC /* Icon-40@2x.png */; };
+		0122CCE11A40B2EF000913BC /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCD91A40B2EF000913BC /* Icon-40@3x.png */; };
+		0122CCE21A40B2EF000913BC /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCDA1A40B2EF000913BC /* Icon-60@2x.png */; };
+		0122CCE31A40B2EF000913BC /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCDB1A40B2EF000913BC /* Icon-60@3x.png */; };
+		0122CCE41A40B2EF000913BC /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCDC1A40B2EF000913BC /* Icon-76@2x.png */; };
+		0122CCE51A40B2EF000913BC /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0122CCDD1A40B2EF000913BC /* iTunesArtwork@2x.png */; };
 		0172017B1A403C5C00A95B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0172017A1A403C5C00A95B01 /* Foundation.framework */; };
 		0172017D1A403C5C00A95B01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0172017C1A403C5C00A95B01 /* CoreGraphics.framework */; };
 		0172017F1A403C5C00A95B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0172017E1A403C5C00A95B01 /* UIKit.framework */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0122CCD61A40B2EF000913BC /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		0122CCD71A40B2EF000913BC /* Icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
+		0122CCD81A40B2EF000913BC /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		0122CCD91A40B2EF000913BC /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		0122CCDA1A40B2EF000913BC /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		0122CCDB1A40B2EF000913BC /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		0122CCDC1A40B2EF000913BC /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		0122CCDD1A40B2EF000913BC /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		017201771A403C5C00A95B01 /* HMPopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMPopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0172017A1A403C5C00A95B01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0172017C1A403C5C00A95B01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +98,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0122CCD51A40B2D2000913BC /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				0122CCD61A40B2EF000913BC /* Icon-29@2x.png */,
+				0122CCD71A40B2EF000913BC /* Icon-29@3x.png */,
+				0122CCD81A40B2EF000913BC /* Icon-40@2x.png */,
+				0122CCD91A40B2EF000913BC /* Icon-40@3x.png */,
+				0122CCDA1A40B2EF000913BC /* Icon-60@2x.png */,
+				0122CCDB1A40B2EF000913BC /* Icon-60@3x.png */,
+				0122CCDC1A40B2EF000913BC /* Icon-76@2x.png */,
+				0122CCDD1A40B2EF000913BC /* iTunesArtwork@2x.png */,
+			);
+			name = AppIcon;
+			sourceTree = "<group>";
+		};
 		0172016E1A403C5C00A95B01 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +161,7 @@
 		017201811A403C5C00A95B01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0122CCD51A40B2D2000913BC /* AppIcon */,
 				017201821A403C5C00A95B01 /* HMPopUp-Info.plist */,
 				017201831A403C5C00A95B01 /* InfoPlist.strings */,
 				017201861A403C5C00A95B01 /* main.m */,
@@ -241,9 +273,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0122CCDE1A40B2EF000913BC /* Icon-29@2x.png in Resources */,
 				017201931A403C5C00A95B01 /* Images.xcassets in Resources */,
+				0122CCE51A40B2EF000913BC /* iTunesArtwork@2x.png in Resources */,
 				017201851A403C5C00A95B01 /* InfoPlist.strings in Resources */,
+				0122CCE01A40B2EF000913BC /* Icon-40@2x.png in Resources */,
+				0122CCDF1A40B2EF000913BC /* Icon-29@3x.png in Resources */,
+				0122CCE11A40B2EF000913BC /* Icon-40@3x.png in Resources */,
+				0122CCE31A40B2EF000913BC /* Icon-60@3x.png in Resources */,
 				0172018E1A403C5C00A95B01 /* Main.storyboard in Resources */,
+				0122CCE41A40B2EF000913BC /* Icon-76@2x.png in Resources */,
+				0122CCE21A40B2EF000913BC /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +512,7 @@
 				017201AB1A403C5C00A95B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		017201AC1A403C5C00A95B01 /* Build configuration list for PBXNativeTarget "HMPopUpTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +521,7 @@
 				017201AE1A403C5C00A95B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

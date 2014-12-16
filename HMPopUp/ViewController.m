@@ -35,7 +35,7 @@
 }
 
 #pragma mark - HMPopUpViewDelegate
--(void)popUpView:(HMPopUpView *)view accepted:(BOOL)accept {
+-(void)popUpView:(HMPopUpView *)view accepted:(BOOL)accept inputText:(NSString *)text{
     if (accept) {
         //do stuff
         NSLog(@"User pressed Okay button");

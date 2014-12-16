@@ -129,8 +129,8 @@
 #pragma mark - PopUpView Button Actions
 - (void)acceptAction {
     [self hide];
-    if ([_hmDelegate respondsToSelector:@selector(popUpView:accepted:)]) {
-        [_hmDelegate popUpView:self accepted:YES];
+    if ([_hmDelegate respondsToSelector:@selector(popUpView:accepted:inputText:)]) {
+        [_hmDelegate popUpView:self accepted:YES inputText:txtField.text];
     }
     
     
@@ -138,8 +138,8 @@
 
 - (void)cancelAction {
     [self hide];
-    if ([_hmDelegate respondsToSelector:@selector(popUpView:accepted:)]) {
-        [_hmDelegate popUpView:self accepted:NO];
+    if ([_hmDelegate respondsToSelector:@selector(popUpView:accepted:inputText:)]) {
+        [_hmDelegate popUpView:self accepted:NO inputText:txtField.text];
     }
     
 }

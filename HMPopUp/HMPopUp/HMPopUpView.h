@@ -25,7 +25,7 @@ typedef enum HMPopUpType{
  *  @param alert  HMPopUpView
  *  @param accept YES or NO
  */
-- (void) popUpView:(HMPopUpView *)view accepted:(BOOL)accept ;
+- (void) popUpView:(HMPopUpView *)view accepted:(BOOL)accept inputText:(NSString *)text;
 
 @end
 

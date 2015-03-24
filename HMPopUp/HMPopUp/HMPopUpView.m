@@ -122,8 +122,11 @@
     btnOk.backgroundColor = btnBGColor;
     btnCancel.backgroundColor = btnBGColor;
     
-    btnOk.titleLabel.textColor = btnTxtColor;
-    btnCancel.titleLabel.textColor = btnTxtColor;
+    // btnOk.titleLabel.textColor = btnTxtColor;
+    // btnCancel.titleLabel.textColor = btnTxtColor;
+    
+    [btnOk setTitleColor:btnTxtColor forState:UIControlStateNormal];
+    [btnCancel setTitleColor:btnTxtColor forState:UIControlStateNormal];
 }
 
 #pragma mark - PopUpView Button Actions

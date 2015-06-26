@@ -184,7 +184,7 @@
     if (textField == txtField) {
         if ([UIScreen mainScreen].bounds.size.height < 570) {
             [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-                containerView.transform = CGAffineTransformMakeTranslation(0, -50);
+                containerView.transform = CGAffineTransformMakeTranslation(0, -70);
             } completion:^(BOOL finished) {
                 
             }];

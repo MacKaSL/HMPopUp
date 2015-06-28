@@ -13,6 +13,23 @@ typedef enum HMPopUpType{
     HMInputView
 }HMPopUpType;
 
+typedef NS_ENUM(NSInteger, HMPopUpTransitionType) {
+    HMPopUpTransitionTypePop,
+    HMPopUpTransitionTypePopFromBottom,
+    HMPopUpTransitionTypePopFromTop,
+    HMPopUpTransitionTypeFadeIn,
+    HMPopUpTransitionTypeFadeInFromBottom,
+    HMPopUpTransitionTypeFadeInFromTop
+};
+
+typedef NS_ENUM(NSInteger, HMPopUpDismissType) {
+    HMPopUpDismissTypeFadeOut,
+    HMPopUpDismissTypeFadeOutBottom,
+    HMPopUpDismissTypeFadeOutTop
+};
+
+
+#pragma mark - Delegate
 /**
  *  HMPopUpViewDelegate Protocol
  */
@@ -31,11 +48,77 @@ typedef enum HMPopUpType{
 
 @interface HMPopUpView : UIView <UITextFieldDelegate>
 
+#pragma mark - Properties
 /**
  *  HMPopUpViewDelegate delegate propoerty
  */
 @property (nonatomic, strong) id<HMPopUpViewDelegate> hmDelegate;
 
+/**
+ *  Sets the border color around the pop up view.
+ */
+@property (nonatomic, strong) UIColor * borderColor;
+
+/**
+ *  Sets the background color for the separator view between the title label and text field.
+ */
+@property (nonatomic, strong) UIColor * titleSeparatorColor;
+
+/**
+ *  Sets the background color for button view.
+ */
+@property (nonatomic, strong) UIColor * buttonViewBGColor;
+
+/**
+ *  sets the background color for the text field.
+ */
+@property (nonatomic, strong) UIColor * textFieldBGColor;
+
+/**
+ *  Sets the transition type. Default is HMPopUpTransitionTypePop
+ */
+@property (nonatomic, assign) HMPopUpTransitionType transitionType;
+
+/**
+ *  Sets the transition type. Default is HMPopUpDismissTypeFadeOut
+ */
+@property (nonatomic, assign) HMPopUpDismissType dismissType;
+
+/**
+ *  Sets the presentation animation duration. Default is 0.8
+ */
+@property (nonatomic, assign) NSTimeInterval presentAnimationDuration;
+
+/**
+ *  Sets the dismiss animation duration. Default is 0.4
+ */
+@property (nonatomic, assign) NSTimeInterval dismissAnimationDuration;
+
+/**
+ *  Sets the text color of the text field.
+ */
+@property (nonatomic, strong) UIColor * textFieldTextColor;
+
+@property (nonatomic, strong) UIColor * okButtonTextColor;
+
+/**
+ *  Sets the 'Ok' button background color
+ */
+@property (nonatomic, strong) UIColor * okButtonBGColor;
+
+@property (nonatomic, strong) UIColor * cancelButtonTextColor;
+
+/**
+ *  Sets the 'Cancel' button background color
+ */
+@property (nonatomic, strong) UIColor * cancelButtonBGColor;
+
+/**
+ *  Sets the border width for the pop up view. Default is 2.
+ */
+@property (nonatomic, assign) float borderWidth;
+
+#pragma mark - Methods
 /**
  *  Intializing view with View Title, Button titles (ok/cancel), HMPopUpViewDelegate.
  *

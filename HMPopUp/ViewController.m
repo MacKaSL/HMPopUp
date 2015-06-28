@@ -30,6 +30,22 @@
 #pragma mark - Button Action
 - (IBAction)LaunchPopUpView:(id)sender {
     HMPopUpView *hmPopUp = [[HMPopUpView alloc] initWithTitle:@"Hey PopUp..." okButtonTitle:@"Okay" cancelButtonTitle:@"Cancel" delegate:self];
+    hmPopUp.borderColor = [UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000];
+    hmPopUp.titleSeparatorColor = [UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000];
+    
+//    [hmPopUp configureHMPopUpViewWithBGColor:[UIColor whiteColor]
+//                                      titleColor:[UIColor colorWithRed:0.894 green:0.000 blue:0.476 alpha:1.000]
+//                                 buttonViewColor:[UIColor whiteColor]
+//                                   buttonBGColor:[UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000]
+//                                 buttonTextColor:[UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000]];
+    
+    hmPopUp.okButtonBGColor = [UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000];
+    hmPopUp.okButtonTextColor = [UIColor colorWithRed:0.894 green:0.000 blue:0.476 alpha:1.000];
+    
+    hmPopUp.textFieldBGColor = [UIColor redColor];
+    hmPopUp.borderWidth = 1;
+    hmPopUp.transitionType = HMPopUpTransitionTypePopFromBottom;
+    hmPopUp.dismissType = HMPopUpDismissTypeFadeOutTop;
     [hmPopUp showInView:self.view];
     
 }

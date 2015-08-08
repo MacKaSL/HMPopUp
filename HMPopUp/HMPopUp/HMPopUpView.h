@@ -55,6 +55,16 @@ typedef NS_ENUM(NSInteger, HMPopUpDismissType) {
 @property (nonatomic, strong) id<HMPopUpViewDelegate> hmDelegate;
 
 /**
+ *  Sets the font for the title.
+ */
+@property (nonatomic, strong) UIFont * titleFont;
+
+/**
+ *  Sets the font for the text field.
+ */
+@property (nonatomic, strong) UIFont * textFieldFont;
+
+/**
  *  Sets the border color around the pop up view.
  */
 @property (nonatomic, strong) UIColor * borderColor;
@@ -73,6 +83,21 @@ typedef NS_ENUM(NSInteger, HMPopUpDismissType) {
  *  sets the background color for the text field.
  */
 @property (nonatomic, strong) UIColor * textFieldBGColor;
+
+/**
+ *  sets the boarder width for the text field.
+ */
+@property (nonatomic, assign) CGFloat textFieldBoarderWidth;
+
+/**
+ *  sets the boarder color for the text field.
+ */
+@property (nonatomic, strong) UIColor * textFieldBoarderColor;
+
+/**
+ *  sets the background color for the middle view which the text field is positioned area.
+ */
+@property (nonatomic, strong) UIColor * middleViewBGColor;
 
 /**
  *  Sets the transition type. Default is HMPopUpTransitionTypePop
@@ -95,7 +120,7 @@ typedef NS_ENUM(NSInteger, HMPopUpDismissType) {
 @property (nonatomic, assign) NSTimeInterval dismissAnimationDuration;
 
 /**
- *  Sets the text color of the text field.
+ *  Sets the text color of the text field. Default is White.
  */
 @property (nonatomic, strong) UIColor * textFieldTextColor;
 

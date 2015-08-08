@@ -13,7 +13,7 @@
 #define DEFAULT_DISMISS_ANIMATION_DURATION 0.8
 
 @interface HMPopUpView (){
-    UIView *HUD, *containerView, *separatorView, *buttonView;
+    UIView *HUD, *containerView, *separatorView, *buttonView, *middleView;
     UILabel *lblTitle, *lblMessage;
     UIButton *btnOk, *btnCancel;
     UITextField *txtField;
@@ -103,7 +103,6 @@
         [containerView addSubview:btnOk];
         [btnOk addTarget:self action:@selector(acceptAction) forControlEvents:UIControlEventTouchUpInside];
         
-        
         btnCancel = [[UIButton alloc] initWithFrame:CGRectMake(btnOk.frame.origin.x + btnOk.frame.size.width + 1, cvFrame.origin.y + 131, cvFrame.size.width / 2, 39)];
         [btnCancel setTitle:cnclBtnTtl forState:UIControlStateNormal];
         btnCancel.backgroundColor = [UIColor blackColor];
@@ -111,6 +110,10 @@
         btnCancel.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:15];
         [containerView addSubview:btnCancel];
         [btnCancel addTarget:self action:@selector(cancelAction) forControlEvents:UIControlEventTouchUpInside];
+        
+        middleView = [[UIView alloc] initWithFrame:CGRectMake(cvFrame.origin.x, separatorView.frame.origin.y + separatorView.frame.size.height, cvFrame.size.width, btnOk.frame.origin.y)];
+        middleView.backgroundColor = [UIColor whiteColor];
+        [containerView insertSubview:middleView belowSubview:txtField];
         
         presentDuration = DEFAULT_PRESENTATION_ANIMATION_DURATION;
         dismissDuration = DEFAULT_DISMISS_ANIMATION_DURATION;
@@ -136,6 +139,24 @@
     [btnCancel setTitleColor:btnTxtColor forState:UIControlStateNormal | UIControlStateHighlighted | UIControlStateSelected];
     btnCancel.titleLabel.textColor = [UIColor colorWithRed:0.181 green:0.663 blue:0.882 alpha:1.000];
 //    [btnOk.titleLabel setTextColor:btnTxtColor];
+    
+}
+
+-(void)setMiddleViewBGColor:(UIColor *)middleViewBGColor {
+    
+    middleView.backgroundColor = middleViewBGColor;
+    
+}
+
+-(void)setTextFieldFont:(UIFont *)textFieldFont {
+    
+    txtField.font = textFieldFont;
+    
+}
+
+-(void)setTitleFont:(UIFont *)titleFont {
+    
+    lblTitle.font = titleFont;
     
 }
 
@@ -167,6 +188,18 @@
 -(void)setTextFieldTextColor:(UIColor *)textFieldTextColor {
     
     txtField.textColor = textFieldTextColor;
+    
+}
+
+-(void)setTextFieldBoarderWidth:(CGFloat)textFieldBoarderWidth {
+    
+    txtField.layer.borderWidth = textFieldBoarderWidth;
+    
+}
+
+-(void)setTextFieldBoarderColor:(UIColor *)textFieldBoarderColor {
+    
+    txtField.layer.borderColor = textFieldBoarderColor.CGColor;
     
 }
 
